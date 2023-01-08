@@ -1,13 +1,6 @@
-
+from utils import load_candidates
 import json
 from flask import Flask
-
-
-def load_candidates():
-    """загружает данные из файла"""
-    with open("candidates.json", mode='r', encoding='utf-8') as file:
-        data = file.read()
-    return data
 
 
 def get_all():
